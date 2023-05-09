@@ -41,6 +41,8 @@ startBtn.addEventListener('click', () => {
 
   if (deltaTime < 0) {
     alert('Please choose a date in the future');
+  } else if (deltaTime !== 0) {
+    startBtn.disabled = true;
   }
 
   const timer = setInterval(() => {
